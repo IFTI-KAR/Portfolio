@@ -1,0 +1,9 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "cp assets/index-CGPbLzlx.beautified.js assets/index-CGPbLzlx.js && mkdir -p dist/assets && rsync -a --delete assets/ dist/assets/ && cp index.html dist/index.html && cp vite.svg dist/vite.svg && echo 'Build complete! Dist folder updated.'"
+  }
+}
