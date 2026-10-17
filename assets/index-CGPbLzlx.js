@@ -22984,7 +22984,7 @@ const fT = [{
     ST = "/assets/project-3-DkKwAvsa.png",
     PT = "/assets/project-4-nlp-jailbreak.jpg",
     kT = "/assets/project-5-petsegnet.jpg",
-    NT = "/assets/project-6-epiwatch.jpg",
+    epiwatch_img = "/assets/project-6-epiwatch.jpg",
     wT = (n, i = 30) => {
         const l = n.split(" ");
         return l.length > i ? l.slice(0, i).join(" ") + "..." : n
@@ -23030,12 +23030,12 @@ const fT = [{
         details: {
             description: "Built an end-to-end NLP pipeline to classify 28,000 adversarial LLM jailbreak prompts into 16 safety-policy categories, benchmarking 10 models across TF-IDF, Word2Vec/GloVe, and fine-tuned BERT. Achieved 0.89 accuracy and Macro-F1 with a soft-voting ensemble, and identified a label-leakage issue through an input-ablation study before deploying as a Streamlit web app.",
             techStack: ["Python", "TF-IDF", "BERT", "GRU/LSTM", "Scikit-learn", "Streamlit"],
-            liveLink: "https://github.com/IFTI-KAR",
-            githubLink: "https://github.com/IFTI-KAR"
+            liveLink: "http://jailbreak-group.streamlit.app",
+            githubLink: "https://github.com/IFTI-KAR/Jailbreak-Attack-Prompt-Classification-Model"
         }
     }, {
         id: 5,
-        name: "PetSegNet – Joint Pet Segmentation & Breed Classification",
+        name: "PetSegNet \u2013 Joint Pet Segmentation & Breed Classification",
         image: kT,
         type: "Deep Learning / Computer Vision",
         details: {
@@ -23046,8 +23046,8 @@ const fT = [{
         }
     }, {
         id: 6,
-        name: "EpiWatch BD – AI Epidemic Early-Warning System",
-        image: NT,
+        name: "EpiWatch BD \u2013 AI Epidemic Early-Warning System",
+        image: epiwatch_img,
         type: "Full-Stack + Applied ML",
         details: {
             description: "Built a district-level disease outbreak prediction system for Bangladesh's 64 districts using a Scikit-learn RandomForestRegressor trained on environmental signals. Developed a Python Flask AI microservice for risk scoring and Bangla + English NLP news classification, integrated with a React/Leaflet frontend for real-time epidemic risk maps.",
