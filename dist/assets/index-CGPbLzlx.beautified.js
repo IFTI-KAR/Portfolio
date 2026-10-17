@@ -22982,6 +22982,9 @@ const fT = [{
     bT = "/assets/project-1-CayhLkiF.png",
     xT = "/assets/project-2-BDS-8SIb.png",
     ST = "/assets/project-3-DkKwAvsa.png",
+    PT = "/assets/project-4-nlp-jailbreak.jpg",
+    kT = "/assets/project-5-petsegnet.jpg",
+    NT = "/assets/project-6-epiwatch.jpg",
     wT = (n, i = 30) => {
         const l = n.split(" ");
         return l.length > i ? l.slice(0, i).join(" ") + "..." : n
@@ -23018,6 +23021,39 @@ const fT = [{
             techStack: ["React", "Node.js", "Express", "MongoDB", "JWT"],
             liveLink: "https://log-web-34782.web.app/",
             githubLink: "https://github.com/IFTI-KAR/Blogar-a-blog-site-client"
+        }
+    }, {
+        id: 4,
+        name: "Jailbreak Attack Prompt Classification",
+        image: PT,
+        type: "NLP / Machine Learning",
+        details: {
+            description: "Built an end-to-end NLP pipeline to classify 28,000 adversarial LLM jailbreak prompts into 16 safety-policy categories, benchmarking 10 models across TF-IDF, Word2Vec/GloVe, and fine-tuned BERT. Achieved 0.89 accuracy and Macro-F1 with a soft-voting ensemble, and identified a label-leakage issue through an input-ablation study before deploying as a Streamlit web app.",
+            techStack: ["Python", "TF-IDF", "BERT", "GRU/LSTM", "Scikit-learn", "Streamlit"],
+            liveLink: "https://github.com/IFTI-KAR",
+            githubLink: "https://github.com/IFTI-KAR"
+        }
+    }, {
+        id: 5,
+        name: "PetSegNet \u2013 Joint Pet Segmentation & Breed Classification",
+        image: kT,
+        type: "Deep Learning / Computer Vision",
+        details: {
+            description: "Designed and trained a shared encoder-decoder U-Net performing simultaneous binary pet segmentation and 37-class breed classification on the Oxford-IIIT Pet Dataset (~7,400 images). Implemented and benchmarked a Base U-Net and an Attention U-Net with attention gates at every skip connection, evaluated using Mean IoU, Dice Score, and macro F1.",
+            techStack: ["PyTorch", "Albumentations", "OpenCV", "NumPy"],
+            liveLink: "https://github.com/IFTI-KAR",
+            githubLink: "https://github.com/IFTI-KAR"
+        }
+    }, {
+        id: 6,
+        name: "EpiWatch BD \u2013 AI Epidemic Early-Warning System",
+        image: NT,
+        type: "Full-Stack + Applied ML",
+        details: {
+            description: "Built a district-level disease outbreak prediction system for Bangladesh's 64 districts using a Scikit-learn RandomForestRegressor trained on environmental signals. Developed a Python Flask AI microservice for risk scoring and Bangla + English NLP news classification, integrated with a React/Leaflet frontend for real-time epidemic risk maps.",
+            techStack: ["Python", "Flask", "Scikit-learn", "Node.js", "MongoDB", "React", "Leaflet"],
+            liveLink: "https://github.com/IFTI-KAR",
+            githubLink: "https://github.com/IFTI-KAR"
         }
     }],
     ET = () => {

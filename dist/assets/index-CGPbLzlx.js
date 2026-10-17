@@ -23035,7 +23035,7 @@ const fT = [{
         }
     }, {
         id: 5,
-        name: "PetSegNet – Joint Pet Segmentation & Breed Classification",
+        name: "PetSegNet \u2013 Joint Pet Segmentation & Breed Classification",
         image: kT,
         type: "Deep Learning / Computer Vision",
         details: {
@@ -23046,7 +23046,7 @@ const fT = [{
         }
     }, {
         id: 6,
-        name: "EpiWatch BD – AI Epidemic Early-Warning System",
+        name: "EpiWatch BD \u2013 AI Epidemic Early-Warning System",
         image: NT,
         type: "Full-Stack + Applied ML",
         details: {
