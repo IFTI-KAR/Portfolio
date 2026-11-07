@@ -70,21 +70,16 @@ function HeroPhoto() {
         style={{
           position: "relative",
           width: "100%", height: "100%",
-          borderRadius: 12,
-          overflow: "hidden",
-          background: "#0d1117",
-          border: "1px solid var(--line)",
-          boxShadow: "0 18px 48px rgba(0,0,0,0.45)",
+          background: "transparent",
         }}
       >
         <img
-          src="/Picture.jpg"
+          src="/Picture-transparent.png"
           alt="Portrait of Iftikar Rahaman"
           style={{
             width: "100%", height: "100%",
-            objectFit: "cover", objectPosition: "50% 20%",
-            filter: "grayscale(0.15) contrast(1.03)",
-            opacity: 0.97,
+            objectFit: "contain", objectPosition: "50% 100%",
+            filter: "drop-shadow(0 12px 28px rgba(0,0,0,0.5))",
           }}
         />
         <div style={{ position: "absolute", left: 14, top: 14, zIndex: 3, fontFamily: "var(--mono)", fontSize: 10, letterSpacing: "0.14em", color: "rgba(255,255,255,0.85)", border: "1px solid rgba(255,255,255,0.2)", padding: "6px 10px", borderRadius: 6, background: "rgba(5,6,10,0.55)", backdropFilter: "blur(6px)" }}>
