@@ -81,13 +81,14 @@ function HeroPhoto() {
         }}
       >
         <img
-          src="/Picture-bust.png"
+          src="/Picture-transparent.png"
           alt="Portrait of Iftikar Rahaman"
           style={{
             width: "100%", height: "100%",
-            objectFit: "cover", objectPosition: "50% 12%",
-            maskImage: "linear-gradient(to bottom, #000 92%, transparent 100%)",
-            WebkitMaskImage: "linear-gradient(to bottom, #000 92%, transparent 100%)",
+            objectFit: "contain", objectPosition: "50% 100%",
+            transform: "scale(1.06)", transformOrigin: "50% 100%",
+            maskImage: "linear-gradient(to bottom, #000 88%, transparent 100%)",
+            WebkitMaskImage: "linear-gradient(to bottom, #000 88%, transparent 100%)",
             filter: "drop-shadow(0 16px 30px rgba(0,0,0,0.55))",
             position: "relative", zIndex: 1,
           }}
