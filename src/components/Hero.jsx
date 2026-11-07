@@ -62,7 +62,7 @@ function HeroPhoto() {
       className="hero-photo-wrap"
       style={{
         position: "relative",
-        height: "min(480px, 50vh)",
+        height: "min(600px, 62vh)",
         background: "transparent",
       }}
     >
@@ -86,6 +86,7 @@ function HeroPhoto() {
           style={{
             width: "100%", height: "100%",
             objectFit: "contain", objectPosition: "50% 100%",
+            transform: "scale(1.06)", transformOrigin: "50% 100%",
             maskImage: "linear-gradient(to bottom, #000 88%, transparent 100%)",
             WebkitMaskImage: "linear-gradient(to bottom, #000 88%, transparent 100%)",
             filter: "drop-shadow(0 16px 30px rgba(0,0,0,0.55))",
@@ -171,10 +172,10 @@ export default function Hero() {
           .hero-grid { grid-template-columns: 1fr !important; align-items: start !important; padding-bottom: 76px !important; }
           #home { padding-top: 96px !important; }
           #home h1 { font-size: clamp(40px, 10.5vw, 60px) !important; }
-          .hero-photo-wrap { display: block !important; height: 260px !important; width: 100% !important; max-width: 320px !important; margin: 8px auto 0 !important; }
+          .hero-photo-wrap { display: block !important; height: 300px !important; width: 100% !important; max-width: 340px !important; margin: 8px auto 0 !important; }
         }
         @media (max-width: 480px) {
-          .hero-photo-wrap { height: 240px !important; max-width: 280px !important; }
+          .hero-photo-wrap { height: 280px !important; max-width: 300px !important; }
         }
       `}</style>
     </section>
