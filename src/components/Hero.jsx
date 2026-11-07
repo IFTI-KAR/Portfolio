@@ -62,7 +62,7 @@ function HeroPhoto() {
       className="hero-photo-wrap"
       style={{
         position: "relative",
-        height: "min(560px, 56vh)",
+        height: "min(480px, 50vh)",
         background: "transparent",
       }}
     >
@@ -86,14 +86,13 @@ function HeroPhoto() {
           style={{
             width: "100%", height: "100%",
             objectFit: "contain", objectPosition: "50% 100%",
-            transform: "scale(1.08)", transformOrigin: "50% 100%",
             maskImage: "linear-gradient(to bottom, #000 88%, transparent 100%)",
             WebkitMaskImage: "linear-gradient(to bottom, #000 88%, transparent 100%)",
             filter: "drop-shadow(0 16px 30px rgba(0,0,0,0.55))",
             position: "relative", zIndex: 1,
           }}
         />
-        <div style={{ position: "absolute", left: "50%", top: 6, transform: "translateX(-50%)", zIndex: 3, fontFamily: "var(--mono)", fontSize: 10, letterSpacing: "0.14em", color: "rgba(255,255,255,0.85)", border: "1px solid rgba(255,255,255,0.2)", padding: "6px 10px", borderRadius: 6, background: "rgba(5,6,10,0.6)", backdropFilter: "blur(6px)" }}>
+        <div style={{ position: "absolute", left: 14, bottom: 20, zIndex: 3, fontFamily: "var(--mono)", fontSize: 10, letterSpacing: "0.14em", color: "rgba(255,255,255,0.85)", border: "1px solid rgba(255,255,255,0.2)", padding: "6px 10px", borderRadius: 6, background: "rgba(5,6,10,0.6)", backdropFilter: "blur(6px)" }}>
           DHAKA · 2026
         </div>
         <div style={{ position: "absolute", right: 14, bottom: 20, zIndex: 3, fontFamily: "var(--mono)", fontSize: 10, letterSpacing: "0.14em", color: "rgba(255,255,255,0.85)", border: "1px solid rgba(255,255,255,0.2)", padding: "6px 10px", borderRadius: 6, background: "rgba(5,6,10,0.6)", backdropFilter: "blur(6px)" }}>
@@ -172,10 +171,10 @@ export default function Hero() {
           .hero-grid { grid-template-columns: 1fr !important; align-items: start !important; padding-bottom: 76px !important; }
           #home { padding-top: 96px !important; }
           #home h1 { font-size: clamp(40px, 10.5vw, 60px) !important; }
-          .hero-photo-wrap { display: block !important; height: 300px !important; }
+          .hero-photo-wrap { display: block !important; height: 260px !important; width: 100% !important; max-width: 320px !important; margin: 8px auto 0 !important; }
         }
         @media (max-width: 480px) {
-          .hero-photo-wrap { height: 260px !important; }
+          .hero-photo-wrap { height: 240px !important; max-width: 280px !important; }
         }
       `}</style>
     </section>
