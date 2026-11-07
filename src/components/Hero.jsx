@@ -62,10 +62,17 @@ function HeroPhoto() {
       className="hero-photo-wrap"
       style={{
         position: "relative",
-        height: "min(520px, 52vh)",
+        height: "min(560px, 56vh)",
         background: "transparent",
       }}
     >
+      {/* soft accent glow so the black tee separates from the dark page */}
+      <div aria-hidden="true" style={{
+        position: "absolute", left: "50%", top: "52%", width: "88%", aspectRatio: "1",
+        transform: "translate(-50%, -50%)", borderRadius: "50%", pointerEvents: "none",
+        background: "radial-gradient(circle, rgba(255,122,61,0.20) 0%, rgba(255,122,61,0.06) 42%, transparent 68%)",
+        filter: "blur(6px)",
+      }} />
       <div
         style={{
           position: "relative",
@@ -79,13 +86,17 @@ function HeroPhoto() {
           style={{
             width: "100%", height: "100%",
             objectFit: "contain", objectPosition: "50% 100%",
-            filter: "drop-shadow(0 12px 28px rgba(0,0,0,0.5))",
+            transform: "scale(1.08)", transformOrigin: "50% 100%",
+            maskImage: "linear-gradient(to bottom, #000 88%, transparent 100%)",
+            WebkitMaskImage: "linear-gradient(to bottom, #000 88%, transparent 100%)",
+            filter: "drop-shadow(0 16px 30px rgba(0,0,0,0.55))",
+            position: "relative", zIndex: 1,
           }}
         />
-        <div style={{ position: "absolute", left: 14, top: 14, zIndex: 3, fontFamily: "var(--mono)", fontSize: 10, letterSpacing: "0.14em", color: "rgba(255,255,255,0.85)", border: "1px solid rgba(255,255,255,0.2)", padding: "6px 10px", borderRadius: 6, background: "rgba(5,6,10,0.55)", backdropFilter: "blur(6px)" }}>
+        <div style={{ position: "absolute", left: "50%", top: 6, transform: "translateX(-50%)", zIndex: 3, fontFamily: "var(--mono)", fontSize: 10, letterSpacing: "0.14em", color: "rgba(255,255,255,0.85)", border: "1px solid rgba(255,255,255,0.2)", padding: "6px 10px", borderRadius: 6, background: "rgba(5,6,10,0.6)", backdropFilter: "blur(6px)" }}>
           DHAKA · 2026
         </div>
-        <div style={{ position: "absolute", right: 14, bottom: 14, zIndex: 3, fontFamily: "var(--mono)", fontSize: 10, letterSpacing: "0.14em", color: "rgba(255,255,255,0.85)", border: "1px solid rgba(255,255,255,0.2)", padding: "6px 10px", borderRadius: 6, background: "rgba(5,6,10,0.55)", backdropFilter: "blur(6px)" }}>
+        <div style={{ position: "absolute", right: 14, bottom: 20, zIndex: 3, fontFamily: "var(--mono)", fontSize: 10, letterSpacing: "0.14em", color: "rgba(255,255,255,0.85)", border: "1px solid rgba(255,255,255,0.2)", padding: "6px 10px", borderRadius: 6, background: "rgba(5,6,10,0.6)", backdropFilter: "blur(6px)" }}>
           IFTIKAR RAHAMAN
         </div>
       </div>
