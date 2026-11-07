@@ -88,6 +88,7 @@ export default function Contact() {
         @media (max-width: 900px) {
           .contact-grid { grid-template-columns: 1fr !important; }
           .form-row { grid-template-columns: 1fr !important; }
+          #contact h2 { font-size: clamp(44px, 11vw, 64px) !important; }
         }
       `}</style>
     </section>

@@ -194,6 +194,14 @@ export default function Work() {
         @media (max-width: 900px) {
           .work-grid { grid-template-columns: 1fr !important; }
           .work-grid > article { position: static !important; min-height: 0 !important; }
+          .work-grid > article h3 { max-width: 100% !important; font-size: clamp(30px, 7.5vw, 44px) !important; }
+          .work-grid > article img { display: none !important; }
+          .work-grid > div button { grid-template-columns: 1fr auto !important; gap: 10px !important; padding: 18px 8px !important; }
+          .work-grid > div button > span:first-child { display: none !important; }
+        }
+        @media (max-width: 640px) {
+          #work h2 { font-size: clamp(40px, 10vw, 56px) !important; }
+          #work .btn-primary, #work .btn-outline { width: 100%; justify-content: center; }
         }
       `}</style>
     </section>

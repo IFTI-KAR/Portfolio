@@ -88,6 +88,11 @@ export default function Skills() {
       <style>{`
         @media (max-width: 900px) {
           .technology-group { grid-template-columns: 1fr !important; }
+          #skills h2 { font-size: clamp(40px, 10vw, 60px) !important; }
+        }
+        @media (max-width: 640px) {
+          .technology-group > div:last-child { grid-template-columns: 1fr 1fr !important; gap: 8px 10px !important; }
+          .technology-group > div:last-child > div { padding: 8px 6px !important; }
         }
       `}</style>
     </section>

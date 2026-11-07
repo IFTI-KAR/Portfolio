@@ -23,7 +23,7 @@ export default function Journey() {
       </motion.h2>
 
       {/* Current role */}
-      <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} style={{ display: "grid", gridTemplateColumns: "minmax(0, 1.2fr) minmax(0, 0.8fr)", gap: "clamp(20px,4vw,48px)", padding: "28px 0", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)", alignItems: "start" }}>
+      <motion.div className="journey-current" initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} style={{ display: "grid", gridTemplateColumns: "minmax(0, 1.2fr) minmax(0, 0.8fr)", gap: "clamp(20px,4vw,48px)", padding: "28px 0", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)", alignItems: "start" }}>
         <div>
           <p className="index-num" style={{ marginBottom: 10 }}><strong>GRADUATED</strong> · DHAKA</p>
           <h3 className="display-title" style={{ fontSize: "clamp(28px,3.4vw,44px)", margin: "0 0 8px" }}><span style={{ color: "var(--accent)" }}>BRAC University</span></h3>
@@ -68,7 +68,11 @@ export default function Journey() {
 
       <style>{`
         @media (max-width: 900px) {
+          .journey-current { grid-template-columns: 1fr !important; }
           .edu-rows > div { grid-template-columns: 1fr !important; gap: 8px !important; }
+        }
+        @media (max-width: 640px) {
+          .edu-rows > div { padding-left: 4px !important; }
         }
       `}</style>
     </section>

@@ -153,7 +153,7 @@ export default function Research() {
                 ))}
               </div>
 
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0,1fr))", gap: 16, marginTop: 30, paddingTop: 22, borderTop: "1px solid var(--line)" }}>
+              <div className="research-metrics" style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0,1fr))", gap: 16, marginTop: 30, paddingTop: 22, borderTop: "1px solid var(--line)" }}>
                 {paper.metrics.map((m, i) => <AnimatedMetric key={i} metric={m} />)}
               </div>
 
@@ -175,6 +175,11 @@ export default function Research() {
         @media (max-width: 900px) {
           .research-grid { grid-template-columns: 1fr !important; }
           .research-grid > div:last-child { position: static !important; }
+          #research h2 { font-size: clamp(40px, 10vw, 60px) !important; }
+        }
+        @media (max-width: 640px) {
+          .research-metrics { grid-template-columns: 1fr !important; gap: 14px !important; }
+          .research-grid button { min-height: 44px !important; }
         }
       `}</style>
     </section>

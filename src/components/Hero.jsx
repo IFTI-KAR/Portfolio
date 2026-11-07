@@ -164,7 +164,12 @@ export default function Hero() {
       <style>{`
         @media (max-width: 900px) {
           .hero-grid { grid-template-columns: 1fr !important; align-items: start !important; padding-bottom: 76px !important; }
-          .hero-photo-wrap { display: none; }
+          #home { padding-top: 96px !important; }
+          #home h1 { font-size: clamp(40px, 10.5vw, 60px) !important; }
+          .hero-photo-wrap { display: block !important; height: 300px !important; }
+        }
+        @media (max-width: 480px) {
+          .hero-photo-wrap { height: 260px !important; }
         }
       `}</style>
     </section>

@@ -86,7 +86,7 @@ export default function About() {
             <span style={{ fontFamily: "var(--display)", fontWeight: 700, fontSize: 12, letterSpacing: "0.02em", color: "var(--accent)", textTransform: "uppercase" }}>Selected work</span>
             <a href="#work" style={{ fontFamily: "var(--mono)", fontSize: 10, letterSpacing: "0.12em", color: "var(--muted)", textTransform: "uppercase" }}>View all →</a>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }} role="list" aria-label="Selected works preview">
+          <div className="about-glimpse" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }} role="list" aria-label="Selected works preview">
             {workGlimpse.map((w, i) => (
               <motion.article
                 key={w.name}
@@ -155,6 +155,11 @@ export default function About() {
       <style>{`
         @media (max-width: 900px) {
           .about-grid { grid-template-columns: 1fr !important; }
+        }
+        @media (max-width: 640px) {
+          .about-glimpse { grid-template-columns: 1fr !important; }
+          .about-glimpse article > div:first-child { height: 140px !important; }
+          .about-grid h2 { font-size: clamp(34px, 9vw, 48px) !important; }
         }
       `}</style>
     </section>

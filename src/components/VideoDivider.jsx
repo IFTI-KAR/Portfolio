@@ -32,6 +32,7 @@ export default memo(function VideoDivider() {
   return (
     <section
       ref={sectionRef}
+      className="video-divider"
       aria-label="Motion interlude"
       style={{ position: "relative", height: "220vh", background: "#05060a" }}
     >
@@ -97,6 +98,12 @@ export default memo(function VideoDivider() {
           </p>
         </motion.div>
       </div>
+      <style>{`
+        @media (max-width: 900px) {
+          .video-divider { height: 150vh !important; }
+          .video-divider .display-title { font-size: clamp(30px, 8vw, 48px) !important; }
+        }
+      `}</style>
     </section>
   );
 });
