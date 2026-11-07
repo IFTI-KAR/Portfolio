@@ -1,23 +1,15 @@
 // src/layouts/RootLayout.jsx
 // Lenis smooth scroll + GSAP ScrollTrigger + section reveals.
-// Preloader gates the initial animation.
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { Outlet } from "react-router";
 import Lenis from "lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Preloader from "../components/Preloader";
 
 export default function RootLayout() {
-  const [entered, setEntered] = useState(false);
   const lenisRef = useRef(null);
-
-  useEffect(() => {
-    document.documentElement.style.overflow = entered ? "" : "hidden";
-    return () => { document.documentElement.style.overflow = ""; };
-  }, [entered]);
 
   useEffect(() => {
     if (window.matchMedia("(pointer: coarse)").matches) return;
@@ -76,12 +68,11 @@ export default function RootLayout() {
       <div className="viewport-frame" aria-hidden="true" />
       <div className="cursor-glow" aria-hidden="true" />
       <div className="cursor-spot" aria-hidden="true" />
-      {!entered && <Preloader onDone={() => { setEntered(true); setTimeout(() => ScrollTrigger.refresh(), 200); }} />}
-      <div style={{ opacity: entered ? 1 : 0, transition: "opacity .6s ease" }}>
+      <>
         <Navbar />
         <Outlet />
         <Footer />
-      </div>
+      </>
     </>
   );
 }
