@@ -13,7 +13,7 @@ const workGlimpse = [
   { name: "Jailbreak Classifier", tag: "ML · NLP", image: "/project-4.jpg", live: "http://jailbreak-group.streamlit.app", code: "https://github.com/IFTI-KAR/Jailbreak-Attack-Prompt-Classification-Model" },
   { name: "PetSegNet", tag: "ML · Vision", image: "/project-5.jpg", live: "https://github.com/IFTI-KAR/PetSegNet-Oxford-Pet-Segmentation-using-Deep-Learning", code: "https://github.com/IFTI-KAR/PetSegNet-Oxford-Pet-Segmentation-using-Deep-Learning" },
   { name: "EpiWatch BD", tag: "ML · Full-Stack", image: "/project-6.jpg", live: "https://github.com/IFTI-KAR/EpiWatch-BD-AI-Epidemic-Early-Warning-System", code: "https://github.com/IFTI-KAR/EpiWatch-BD-AI-Epidemic-Early-Warning-System" },
-  { name: "SLM–LLM Tutoring", tag: "Research · Thesis", image: "/project-4.jpg", live: "#research", code: "https://github.com/IFTI-KAR", isResearch: true },
+  { name: "SLM–LLM Tutoring", tag: "Research · Thesis", image: "/project-4-old.jpg", live: "#research", code: "https://github.com/IFTI-KAR", isResearch: true },
   { name: "Flood Prediction Skill", tag: "Research · ECCE 2027", image: "/project-6.jpg", live: "#research", code: "https://github.com/IFTI-KAR", isResearch: true },
 ];
 
