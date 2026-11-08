@@ -35,7 +35,7 @@ Update colours in `src/index.css` (`--accent`, `--accent-dim`, `--accent-soft`, 
 ## Content
 
 - `src/data/profile.js` — single source of truth for name, bio, links, stats, and About cards.
-- `src/pages/Work.jsx` — 6 projects (3 Web + 3 ML) with featured spotlight + catalogue + detail modal.
+- `src/pages/Work.jsx` — 9 projects (4 Web + 3 ML + 2 Research) with featured spotlight + catalogue + detail modal.
 - `src/pages/Research.jsx` — 3 AI threads (Jailbreak, PetSegNet, EpiWatch).
 - `public/Picture.jpg` — Hero portrait (from `assets/ifti.jpg`).
 - `public/resume.pdf` — resume (from `Iftikar_Rahaman.pdf`).
