@@ -2,7 +2,6 @@
 
 Personal portfolio website for Iftikar Rahaman — CSE Student at BRAC University, Full Stack Developer, ML & NLP enthusiast.
 
-Redesigned in the editorial layout style of [tanjip-surait-mahdin.vercel.app](https://tanjip-surait-mahdin.vercel.app/) with a new warm orange accent theme and all of Iftikar's projects, bio, skills, and contact details.
 
 ## Stack
 
