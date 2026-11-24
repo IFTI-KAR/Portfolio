@@ -1,41 +1,106 @@
 # Iftikar Rahaman — Portfolio
 
-Personal portfolio website for Iftikar Rahaman — CSE Student at BRAC University, Full Stack Developer, ML & NLP enthusiast.
+**Personal Engineering & AI/ML Research Portfolio**
 
+![React](https://img.shields.io/badge/React-19.1-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-7.1-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![GSAP](https://img.shields.io/badge/GSAP-3.15-88CE02?style=flat-square&logo=greensock&logoColor=black)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.23-0055FF?style=flat-square&logo=framer&logoColor=white)
 
-## Stack
+A single-page editorial portfolio built with React, Tailwind CSS, DaisyUI, GSAP, Framer Motion, and Lenis smooth scrolling, showcasing web engineering work, deep learning projects, and academic research by Iftikar Rahaman (B.Sc. in CSE, BRAC University).
 
-- **Framework**: React 19 + Vite
-- **Styling**: Tailwind CSS v4
-- **Animations**: Framer Motion + GSAP + Lenis smooth scroll
-- **Contact form**: EmailJS
-- **Deploy target**: Vercel
+---
 
-## Run locally
+## Screenshots
 
+| Hero Overview | Selected Work |
+| :---: | :---: |
+| ![Portfolio Home](docs/screenshots/home.png) | ![Work Showcase](docs/screenshots/work.png) |
+
+| Research Highlights | Contact Section |
+| :---: | :---: |
+| ![Research Section](docs/screenshots/research.png) | ![Contact Form](docs/screenshots/contact.png) |
+
+---
+
+## Core Features
+
+- **Editorial Single-Page Architecture**: Seamless vertical flow combining `Hero`, `About`, `VideoDivider`, `Research`, `Work`, `Skills`, `Journey`, and `Contact` sections with `react-scroll` section navigation.
+- **Kinetic Motion & Smooth Scrolling**: Combines `gsap`, `framer-motion`, `lenis`, and a custom `DecryptedText` effect for interactive typography and scroll choreography.
+- **Project & Research Archive**: Highlights 9 curated projects spanning 4 full-stack web builds, 3 ML/CV systems, and 2 research tracks, alongside an embedded downloadable resume (`public/resume.pdf`).
+- **Direct EmailJS Inquiry Form**: Client-side contact integration via `@emailjs/browser` without needing a dedicated backend server.
+- **Responsive Design**: Tailwind CSS v4 + DaisyUI v5 utility styling tuned for desktop and mobile viewports.
+
+---
+
+## Tech Stack
+
+| Category | Technologies |
+| :--- | :--- |
+| **Core UI** | React 19, React Router 7, React Scroll |
+| **Styling** | Tailwind CSS 4.1 (`@tailwindcss/vite`), DaisyUI 5.0, React Icons |
+| **Animation** | GSAP 3.15, Framer Motion 12.23, Lenis 1.3 |
+| **Communication** | EmailJS (`@emailjs/browser`) |
+| **Tooling & Hosting** | Vite 7.1, ESLint 9, Netlify (`netlify.toml`) |
+
+---
+
+## Project Structure
+
+```text
+Portfolio/
+├── public/
+│   ├── resume.pdf               # Downloadable CV asset
+│   └── ...                      # Project previews & profile imagery
+├── src/
+│   ├── components/
+│   │   ├── DecryptedText.jsx    # Kinetic text scramble component
+│   │   ├── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Navbar.jsx
+│   │   └── VideoDivider.jsx
+│   ├── data/
+│   │   └── profile.js           # Structured profile, projects & timeline data
+│   ├── layouts/
+│   │   └── RootLayout.jsx
+│   ├── pages/
+│   │   ├── About.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Home.jsx             # Composed single-page editorial view
+│   │   ├── Journey.jsx
+│   │   ├── Research.jsx
+│   │   ├── Skills.jsx
+│   │   └── Work.jsx
+│   ├── routers/
+│   │   └── router.jsx
+│   ├── App.jsx
+│   └── main.jsx
+├── netlify.toml
+└── package.json
 ```
+
+---
+
+## Local Setup
+
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Installation & Run
+
+```bash
+git clone https://github.com/IFTI-KAR/Portfolio.git
+cd Portfolio
+
+# Install dependencies
 npm install
+
+# Start Vite development server (http://localhost:5173)
 npm run dev
-```
 
-## Build
-
-```
+# Build production bundle
 npm run build
 ```
-
-## Accent colours
-
-- `--accent: #ff7a3d` (warm orange) — changed from reference cyan `#00e5ff`
-- Background: `#08080d` (same dark editorial base)
-
-Update colours in `src/index.css` (`--accent`, `--accent-dim`, `--accent-soft`, `--accent-line`) and Hero glow/corner ticks in `src/components/Hero.jsx` if you want a different palette.
-
-## Content
-
-- `src/data/profile.js` — single source of truth for name, bio, links, stats, and About cards.
-- `src/pages/Work.jsx` — 9 projects (4 Web + 3 ML + 2 Research) with featured spotlight + catalogue + detail modal.
-- `src/pages/Research.jsx` — 3 AI threads (Jailbreak, PetSegNet, EpiWatch).
-- `public/Picture.jpg` — Hero portrait (from `assets/ifti.jpg`).
-- `public/resume.pdf` — resume (from `Iftikar_Rahaman.pdf`).
-- `public/project-*.png/jpg` — project preview images.
